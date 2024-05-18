@@ -1,0 +1,24 @@
+:root {
+    --color-primary-background: #fff;
+    --color-secondary-background: #F3F0F0;
+
+    --color-zotinerary-box: #0064A4;
+
+    --color-navbar: #1B3D6D;
+
+    --color-button-access: #007bff;
+    --color-button-access-hover: #0056b3;
+    --color-button-text-access: #fff;
+
+    --color-button: #FFD200;
+    --color-button-text: #715E1B;
+
+    --color-box-outline: #ccc;
+    --color-box-outline-hover: #ccc;
+
+
+    --color-title: #FFD200;
+    --color-sub-title: #FFF;
+
+    --color-text: #000000;
+  }
