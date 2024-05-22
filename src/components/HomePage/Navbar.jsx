@@ -1,11 +1,15 @@
 import styles from './Navbar.module.css';
+import title from "../../assets/home/title.png";
 
-function Navbar({ onAddCard }) {
+
+function Navbar() {
     return (
         <div className={styles.navbar}>
-            <h1>Zotinerary</h1>
+            <div className={styles.titleBox}>
+                <img className={styles.titleImg} src={title} alt="NFL Player Trivia Game" />
+            </div>
             <div className={styles.buttons}>
-                <button className={styles.mainButton} onClick={onAddCard}>Create Itinerary</button>
+                <button className={styles.categoryButton}>Create Category</button>
             </div>
         </div>
     );

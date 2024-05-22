@@ -2,11 +2,8 @@
 
 .footer {
     color: var(--color-text);
-    margin-top: 120px;
-    background-color: var(--color-borders);
-    display: flex;
+    background-color: var(--color-footer);
     width: 100%;
-    padding: 2% 2% 2% 2%;
     position: fixed;
     bottom: 0;
 }

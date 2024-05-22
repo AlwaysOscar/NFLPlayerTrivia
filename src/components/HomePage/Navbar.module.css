@@ -1,20 +1,13 @@
 .navbar {
-    overflow: hidden;
     background-color: var(--color-navbar);
     padding: 15px 0;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
-.navbar h1 {
-    font-family: "Kadwa", serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 50px;
-    color: var(--color-title);
-    margin: 0;
-    padding-left: 10px;
-    flex: 1;
+.titleImg {
+    width: 502px;
 }
 
 .buttons {
@@ -36,25 +29,18 @@
 }
 
 .buttons button:hover {
-    background-color: var(--color-box-outline-hover);
-    color: black;
+    background-color: var(--color-button-hover);
 }
 
-.altButton {
-    color: white;
-    background-color: transparent;
-}
-
-.mainButton {
+.categoryButton {
     background-color: var(--color-button);
-    border: solid var(--color-button) 1px;
     border-radius: 10px;
-    color: var(--color-navbar);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    color: var(---color-button-text);
 }
 
 @media (max-width: 768px) {
-    .buttons button {
-        font-size: 12px;
+    .titleBox {
+        position: static;
+        margin-top: 20px;
     }
 }

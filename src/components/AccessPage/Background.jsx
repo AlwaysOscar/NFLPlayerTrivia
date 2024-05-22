@@ -1,11 +1,11 @@
 import styles from './Background.module.css';
-import logo from "../../assets/login/title.png";
+import title from "../../assets/login/title.png";
 
 const Background = () => {
     return (
         <div className={styles.background}>
             <div className={styles.titleBox}>
-                <img className={styles.titleImg}src={logo} alt="NFL Player Trivia Game" />
+                <img className={styles.titleImg}src={title} alt="NFL Player Trivia Game" />
             </div>
         </div>
     );

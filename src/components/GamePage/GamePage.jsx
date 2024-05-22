@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './GamePage.module.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import homeIcon from "../../assets/game/home_icon.png";
 import nflLogo from "../../assets/game/nfl_logo.png";
 import dolphinsLogo from "../../assets/game/team_logos/dolphins_logo.png";

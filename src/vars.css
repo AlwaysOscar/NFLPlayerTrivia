@@ -4,13 +4,15 @@
   --color-nfl: #123C64;
   --color-icons: #EFEFEF;
 
-  --color-navbar: #1B3D6D;
+  --color-navbar: #123C64;
+  --color-footer: #123C64;
 
   --color-button-access: #007bff;
   --color-button-access-hover: #0056b3;
   --color-button-text-access: #fff;
 
   --color-button: #E4CE18;
+  --color-button-hover: #e0cc10;
   --color-button-text: #715E1B;
 
   --color-inputbox-outline: #ccc;

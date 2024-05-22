@@ -4,6 +4,7 @@
     position: relative;
     flex-direction: column;
     text-align: center;
+    background-color: var(--color-primary-background);
 }
 
 .mainContainer h1 {
@@ -17,7 +18,7 @@
 }
 
 .nav {
-    background-color: var(--color-borders);
+    background-color: var(--color-navbar);
     display: flex;
     flex-direction: row;
     align-items: center;
