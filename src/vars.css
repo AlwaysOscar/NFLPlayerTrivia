@@ -1,24 +1,23 @@
 :root {
-    --color-primary-background: #fff;
-    --color-secondary-background: #F3F0F0;
+  --color-primary-background: #1DAFBC;
+  --color-secondary-background: #2092A0;
+  --color-nfl: #123C64;
+  --color-icons: #EFEFEF;
 
-    --color-zotinerary-box: #0064A4;
+  --color-navbar: #1B3D6D;
 
-    --color-navbar: #1B3D6D;
+  --color-button-access: #007bff;
+  --color-button-access-hover: #0056b3;
+  --color-button-text-access: #fff;
 
-    --color-button-access: #007bff;
-    --color-button-access-hover: #0056b3;
-    --color-button-text-access: #fff;
+  --color-button: #E4CE18;
+  --color-button-text: #715E1B;
 
-    --color-button: #FFD200;
-    --color-button-text: #715E1B;
+  --color-inputbox-outline: #ccc;
 
-    --color-box-outline: #ccc;
-    --color-box-outline-hover: #ccc;
+  --color-accessbox: #fff;
 
-
-    --color-title: #FFD200;
-    --color-sub-title: #FFF;
-
-    --color-text: #000000;
-  }
+  --color-text: #fff;
+  --color-text-secondary: #100E0E;
+  --color-sub-title: #FFF;
+}

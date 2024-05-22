@@ -8,6 +8,8 @@ import {
 import styles from "./App.module.css";
 import AccessPage from "./components/AccessPage/AccessPage";
 import HomePage from "./components/HomePage/HomePage";
+import GamePage from "./components/GamePage/GamePage";
+import EndPage from "./components/EndPage/EndPage";
 
 function App() {
   return (
@@ -23,6 +25,14 @@ function App() {
             exact
             path="/home"
             element={<HomePage />}
+          />
+          <Route
+            path="/game"
+            element={<GamePage />}
+          />
+          <Route
+            path="/end"
+            element={<EndPage />}
           />
           <Route
             path="*"

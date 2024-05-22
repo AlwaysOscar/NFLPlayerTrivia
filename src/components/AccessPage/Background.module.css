@@ -1,14 +1,14 @@
 .background {
-    background: url('../../assets/login/background.png') var(--color-primary-background) 100% / cover no-repeat;
+    background-image: url('https://static.www.nfl.com/image/private/t_editorial_landscape_12_desktop_2x/f_png/league/siyint2sou8ydeddmaad.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     width: 70%;
     position: relative;
     display: flex;
 }
 
-.zotineraryBox {
-    border-radius: 10px;
-    background: var(--color-zotinerary-box);
+.titleBox {
     width: fit-content;
     height: fit-content;
     padding: 10px;
@@ -21,18 +21,8 @@
     justify-content: center;
 }
 
-.zotineraryBox h1 {
-    color: var(--color-title);
-    font-family: 'Kadwa';
-    font-size: 70px;
-    font-weight: 700;
-}
-
-.zotineraryBox h2 {
-    color: var(--color-sub-title);
-    font-family: 'Inter';
-    font-size: 40px;
-    font-weight: 800;
+.titleImg {
+    width: 502px;
 }
 
 @media (max-width: 768px) {
@@ -43,7 +33,7 @@
         justify-content: center;
     }
 
-    .zotineraryBox {
+    .titleBox {
         position: static;
         margin-top: 20px;
     }

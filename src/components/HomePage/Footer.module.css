@@ -1,0 +1,24 @@
+@import "../../vars.css";
+
+.footer {
+    color: var(--color-text);
+    margin-top: 120px;
+    background-color: var(--color-borders);
+    display: flex;
+    width: 100%;
+    padding: 2% 2% 2% 2%;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer p {
+    font-family: Inter;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 830px) {
+    .footer p {
+        font-size: 9px;
+    }
+}
