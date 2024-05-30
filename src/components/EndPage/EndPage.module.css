@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     z-index: 2;
-    background-color: var(--color-primary-background);
+    background: var(--color-primary-background);
 }
 
 .logoImg {
@@ -16,9 +16,9 @@
 }
 
 .container h1 {
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     text-align: center;
-    font-family: Inter;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 20px;

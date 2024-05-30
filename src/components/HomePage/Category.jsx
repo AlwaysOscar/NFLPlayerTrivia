@@ -1,8 +1,6 @@
 import styles from './Category.module.css';
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-import defaultCategory from "../../assets/home/default_category.png";
-
 
 const Category = () => {
     const [selectedCategory, setSelectedCategory] = useState(null);
@@ -16,7 +14,7 @@ const Category = () => {
         <section className={styles.container}>
 
             <img
-                src={defaultCategory}
+                src={"https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0824%2Fnfl_rank_16x9.jpg"}
                 alt="NFL Player Display"
                 className={styles.displayImg}
             />

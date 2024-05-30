@@ -4,14 +4,14 @@ import title from "../../assets/home/title.png";
 
 function Navbar() {
     return (
-        <div className={styles.navbar}>
-            <div className={styles.titleBox}>
-                <img className={styles.titleImg} src={title} alt="NFL Player Trivia Game" />
-            </div>
+        <nav>
+            <img className={styles.titleImg} src={title} alt="NFL Player Trivia Game" />
             <div className={styles.buttons}>
-                <button className={styles.categoryButton}>Create Category</button>
+                <button>Edit Category</button>
+                <p style={{ color: '#fff', fontSize: '20px', userSelect: 'none' }}>|</p>
+                <button>Create Category</button>
             </div>
-        </div>
+        </nav>
     );
 }
 

@@ -18,7 +18,7 @@ export const EndPage = () => {
             
             <h1>Your Score: {score}</h1>
             <h1>Thank you for playing NFL Player Trivia</h1>
-            <Link to="/" className={styles.playAgainBtn}>Play Again</Link>
+            <Link to="/home" className={styles.playAgainBtn}>Play Again</Link>
 
             <img
                 src={bg1}

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './GamePage.module.css';
-import { Link } from 'react-router-dom';
-import homeIcon from "../../assets/game/home_icon.png";
-import nflLogo from "../../assets/game/nfl_logo.png";
+import Navbar from './Navbar';
+import Choice from './Choice';
+import Question from './Question';
 import dolphinsLogo from "../../assets/game/team_logos/dolphins_logo.png";
 import lionsLogo from "../../assets/game/team_logos/lions_logo.png";
 import billsLogo from "../../assets/game/team_logos/bills_logo.png";
@@ -100,52 +100,14 @@ const GamePage = () => {
         }
     };
 
-    const shuffleOptions = (options) => {
-        return options.sort(() => Math.random() - 0.5);
-    };
-
     const currentQuestion = questionsData[currentQuestionIndex];
 
     return (
-        <section className={styles.mainContainer}>
-            <nav id="navbar" className={styles.nav}>
-                <Link to="/">
-                    <img src={homeIcon} alt="Home Icon" className={styles.homeImg} />
-                </Link>
-                <img src={nflLogo} alt="NFL Logo" className={styles.logoImg} />
-                <div className={styles.scoreBoard}>
-                    <h1>{currentQuestionIndex + 1} / {questionsData.length}</h1>
-                </div>
-            </nav>
-
-            <h1>Question #{currentQuestionIndex + 1}</h1>
-            <p>{currentQuestion.question}</p>
-
-            <div className={styles.body}>
-                {shuffleOptions(currentQuestion.options).map((option) => (
-                    <div
-                        key={option.id}
-                        className={`${styles.choice} 
-                        ${showResult && option.isCorrect ? styles.correct : ''} 
-                        ${showResult && selectedOption && !option.isCorrect && option === selectedOption ? styles.wrong : ''}`}
-                        onClick={() => handleOptionClick(option)}
-                    >
-                        <img
-                            src={option.logo}
-                            alt="Team Logo Image"
-                            className={styles.teamLogoImg}
-                        />
-                        <img
-                            src={option.img}
-                            alt="Player Image"
-                            className={option.id % 2 ? styles.leftPlayerImg : styles.rightPlayerImg}
-                        />
-                        <h1>{option.name}</h1>
-                    </div>
-                ))}
-                <div className={styles.orIcon}> OR </div>
-            </div>
-        </section>
+        <section className={styles.container}>
+            <Navbar currentQuestionIndex={currentQuestionIndex} totalQuestions={questionsData.length} />
+            <Question currentQuestionIndex={currentQuestionIndex} question={currentQuestion.question} />
+            <Choice currentQuestion={currentQuestion} showResult={showResult} selectedOption={selectedOption} handleOptionClick={handleOptionClick} />
+        </section >
     );
 };
 

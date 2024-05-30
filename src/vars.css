@@ -1,25 +1,35 @@
 :root {
-  --color-primary-background: #1DAFBC;
-  --color-secondary-background: #2092A0;
-  --color-nfl: #123C64;
-  --color-icons: #EFEFEF;
-
-  --color-navbar: #123C64;
-  --color-footer: #123C64;
-
-  --color-button-access: #007bff;
-  --color-button-access-hover: #0056b3;
-  --color-button-text-access: #fff;
-
-  --color-button: #E4CE18;
-  --color-button-hover: #e0cc10;
-  --color-button-text: #715E1B;
-
-  --color-inputbox-outline: #ccc;
-
-  --color-accessbox: #fff;
+  /* General */
+  --color-primary-background: linear-gradient(45deg, #3076f9, #00d3d3);
+  --color-secondary-background: #eee;
 
   --color-text: #fff;
   --color-text-secondary: #100E0E;
-  --color-sub-title: #FFF;
+
+  --color-navbar: #013369;
+  --color-footer: #013369;
+
+  --color-button: #1B48E0;
+  --color-button-hover: #fafafa;
+  --color-button-text: #fafafa;
+  --color-button-hover-text: #1B48E0;
+
+  /* Access Page */
+  --color-accessbox: #fff;
+  --color-button-access: #007bff;
+  --color-button-access-hover: #0056b3;
+  --color-inputbox-border: #ccc;
+  --color-text-error: red;
+
+
+  /* Game Page */
+  --color-choicebox-border: #197C82;
+  --color-choicebox-correct: rgba(0, 255, 55, 0.1);
+  --color-choicebox-correct-border: green;
+  --color-choicebox-wrong: rgba(255, 0, 0, 0.5);
+  --color-choicebox-wrong-border: red;
+  --color-choicebox-hover: rgba(0, 0, 255, 0.1);
+  --color-choicebox-hover-border: blue;
+
+  --color-scorebox: #EFEFEF;
 }

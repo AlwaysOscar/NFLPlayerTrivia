@@ -1,46 +1,39 @@
-.navbar {
+nav {
     background-color: var(--color-navbar);
-    padding: 15px 0;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .titleImg {
-    width: 502px;
+    width: 30%;
 }
 
 .buttons {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .buttons button {
-    display: block;
+    display: flex;
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 16px;
     font-size: 15px;
-    font-family: "Kadwa", serif;
-    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
     font-style: normal;
     border: none;
     cursor: pointer;
     margin-right: 10px;
-}
-
-.buttons button:hover {
-    background-color: var(--color-button-hover);
-}
-
-.categoryButton {
-    background-color: var(--color-button);
-    border-radius: 10px;
-    color: var(---color-button-text);
+    margin-left: 10px;
+    color: var(--color-text-secondary);
+    background: var(--color-primary-background);
+    border-radius: 38px;
 }
 
 @media (max-width: 768px) {
-    .titleBox {
-        position: static;
-        margin-top: 20px;
+    .buttons button {
+        font-size: 12px;
+        padding: 5px 8px;
     }
 }

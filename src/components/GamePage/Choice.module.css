@@ -1,0 +1,100 @@
+.body {
+    position: relative;
+    display: flex;
+    margin-top: 20px;
+}
+
+.choice {
+    width: 50%;
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--color-choicebox-border);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    place-items: center;
+}
+
+.choice.correct {
+    background-color: var(--color-choicebox-correct) !important;
+    border: 2px solid var(--color-choicebox-correct-border) !important;
+}
+
+.choice.wrong {
+    background-color: var(--color-choicebox-wrong) !important;
+    border: 2px solid var(--color-choicebox-wrong-border) !important;
+}
+
+.choice:hover {
+    background-color: var(--color-choicebox-hover);
+    border: 2px solid var(--color-choicebox-hover-border);
+}
+
+.choice h1 {
+    color: var(--color-text-secondary);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.choice h1:hover {
+    user-select: none;
+}
+
+.teamLogoImg {
+    position: relative;
+    width: 50%;
+}
+
+.leftPlayerImg {
+    position: absolute;
+    right: 20%;
+    width: 30%;
+}
+
+.rightPlayerImg {
+    position: absolute;
+    left: 20%;
+    width: 30%;
+}
+
+.orIcon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+    text-decoration: none;
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 900;
+    padding: 17px 26px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.orIcon:hover {
+    user-select: none;
+}
+
+@media screen and (max-width: 830px) {
+    .body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightPlayerImg {
+        left: 50%;
+    }
+
+    .orIcon {
+        top: 50%;
+        font-size: 20px;
+        padding: 7px 16px;
+    }
+
+    .choice h1 {
+        font-size: 20px;
+    }
+}

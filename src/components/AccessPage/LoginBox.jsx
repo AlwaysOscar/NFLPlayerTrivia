@@ -30,8 +30,6 @@ const LoginBox = ({ toggleView }) => {
             window.location.href = '/home';
         } else {
             setErrorMessage('Invalid username or password. Please try again.');
-            console.log({storedUsername});
-            console.log({storedPassword});
         }
     };
 

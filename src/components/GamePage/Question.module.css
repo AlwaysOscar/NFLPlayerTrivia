@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container:hover {
+    user-select: none;
+}
+
+.container h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.container p {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 830px) {
+    .container h1 {
+        font-size: 44px;
+    }
+
+    .container p {
+        font-size: 20px;
+    }
+}

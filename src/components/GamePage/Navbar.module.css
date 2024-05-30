@@ -1,0 +1,53 @@
+nav {
+    background-color: var(--color-navbar);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.homeImg {
+    width: 85px;
+    margin-left: 10px;
+}
+
+.logoImg {
+    width: 112px;
+}
+
+.scoreBoard {
+    text-decoration: none;
+    background: var(--color-scorebox);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.scoreBoard:hover {
+    user-select: none;
+}
+
+.scoreBoard h1 {
+    color: var(--color-text-secondary);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 830px) {
+    .logoImg {
+        width: 10%;
+    }
+
+    .homeImg {
+        width: 50%;
+    }
+
+    .scoreBoard h1 {
+        font-size: 15px;
+        font-weight: 900;
+    }
+}

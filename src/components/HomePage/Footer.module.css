@@ -1,21 +1,17 @@
-@import "../../vars.css";
-
-.footer {
+footer {
     color: var(--color-text);
     background-color: var(--color-footer);
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    padding: 5px;
 }
 
-.footer p {
-    font-family: Inter;
+footer p {
     font-size: 12px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 @media screen and (max-width: 830px) {
-    .footer p {
+    footer p {
         font-size: 9px;
     }
 }
