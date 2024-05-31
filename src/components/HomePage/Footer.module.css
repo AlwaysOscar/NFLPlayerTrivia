@@ -4,6 +4,10 @@ footer {
     padding: 5px;
 }
 
+footer:hover {
+    user-select: none;
+}
+
 footer p {
     font-size: 12px;
     letter-spacing: 1px;

@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import styles from './NewCardPopup.module.css';
+import styles from './CreateQuizPopup.module.css';
 
-function NewCardPopup({ onAddCard, onClose }) {
+function CreateQuizPopup({ onAddCard, onClose }) {
     const [name, setName] = useState('');
     const [img, setImg] = useState('');
     const [description, setDescription] = useState('');
@@ -14,7 +14,7 @@ function NewCardPopup({ onAddCard, onClose }) {
     return (
         <div className={styles.popup}>
             <div className={styles.popupContent}>
-                <h2>Create New Itinerary</h2>
+                <h2>Create New Quiz</h2>
                 <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} />
                 <input type="text" placeholder="Image URL" value={img} onChange={(e) => setImg(e.target.value)} />
                 <input type="text" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)}></input>
@@ -25,4 +25,4 @@ function NewCardPopup({ onAddCard, onClose }) {
     );
 }
 
-export default NewCardPopup;
+export default CreateQuizPopup;

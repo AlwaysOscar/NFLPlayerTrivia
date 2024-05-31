@@ -1,15 +1,13 @@
 import styles from './Navbar.module.css';
-import title from "../../assets/home/title.png";
 
 
-function Navbar() {
+function Navbar({onCreateQuiz}) {
     return (
         <nav>
-            <img className={styles.titleImg} src={title} alt="NFL Player Trivia Game" />
             <div className={styles.buttons}>
-                <button>Edit Category</button>
+                <button>Edit Quiz</button>
                 <p style={{ color: '#fff', fontSize: '20px', userSelect: 'none' }}>|</p>
-                <button>Create Category</button>
+                <button onClick={onCreateQuiz}>Create Quiz</button>
             </div>
         </nav>
     );

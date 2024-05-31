@@ -2,10 +2,8 @@ nav {
     background-color: var(--color-navbar);
     display: flex;
     align-items: center;
-}
-
-.titleImg {
-    width: 30%;
+    height: fit-content;
+    padding: 5px;
 }
 
 .buttons {
@@ -34,6 +32,5 @@ nav {
 @media (max-width: 768px) {
     .buttons button {
         font-size: 12px;
-        padding: 5px 8px;
     }
 }

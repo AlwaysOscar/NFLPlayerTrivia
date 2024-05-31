@@ -23,7 +23,7 @@
 
 
   /* Game Page */
-  --color-choicebox-border: #197C82;
+  --color-choicebox-border: #ccc;
   --color-choicebox-correct: rgba(0, 255, 55, 0.1);
   --color-choicebox-correct-border: green;
   --color-choicebox-wrong: rgba(255, 0, 0, 0.5);

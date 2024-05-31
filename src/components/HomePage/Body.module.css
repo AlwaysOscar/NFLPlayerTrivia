@@ -4,6 +4,12 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
+}
+
+.titleImg {
+    width: 602px;
+    height: 163px;
 }
 
 .displayImg {
@@ -19,6 +25,8 @@
 
 .playBtn {
     text-decoration: none;
+    border: none;
+    cursor: pointer;
     background-color: var(--color-button);
     color: var(--color-button-text);
     border-radius: 100px;
@@ -28,9 +36,18 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+.playBtn:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-button-hover-text);
+}
+
 @media screen and (max-width: 830px) {
     .playBtn {
         font-size: 15px;
-        padding: 12px 16px;
+    }
+
+    .titleImg {
+        width: 301px;
+        height: 81.5px;
     }
 }

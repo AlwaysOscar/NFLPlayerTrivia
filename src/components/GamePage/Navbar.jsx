@@ -7,7 +7,7 @@ import styles from './Navbar.module.css';
 function Navbar({currentQuestionIndex, totalQuestions }) {
     return (
         <nav>
-            <Link to="/">
+            <Link to="/home">
                 <img src={homeIcon} alt="Home Icon" className={styles.homeImg} />
             </Link>
             <img src={nflLogo} alt="NFL Logo" className={styles.logoImg} />
