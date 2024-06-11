@@ -1,0 +1,114 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.popupContent {
+    background-color: var(--color-secondary-background);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    max-height: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    overflow-y: auto;
+}
+
+.popupContent h2 {
+    color: var(--color-navbar);
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.popupContent label {
+    text-align: left;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.popupContent input,
+.popupContent select,
+.popupContent textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid var(--color-inputbox-border);
+    box-sizing: border-box;
+    font-size: 12px;
+    background-color: #f9f9f9;
+}
+
+.popupContent input.error,
+.popupContent select.error,
+.popupContent textarea.error {
+    border-color: var(--color-text-error);
+    background-color: #ffefef;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.popupContent button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-button);
+    color: var(--color-button-text);
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+.popupContent button:hover {
+    background-color: var(--color-button-hover);
+    color: var(--color-button-hover-text);
+}
+
+.popupContent button.exit {
+    background-color: #6c757d;
+}
+
+.popupContent button.exit:hover {
+    background-color: #5a6268;
+    color: var(--color-button-text);
+}
+
+.popupContent div.error {
+    padding: 12px;
+    background: #ffefef;
+    border: 1px solid var(--color-text-error);
+    color: var(--color-text-error);
+    border-radius: 5px;
+    margin: 20px 0;
+}
