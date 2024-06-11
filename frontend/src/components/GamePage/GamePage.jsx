@@ -60,6 +60,7 @@ const GamePage = () => {
 
     const navigateToNextQuestion = () => {
         if (currentQuestionIndex < quiz.questions.length - 1) {
+            setShowResult(false);
             setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
         } else {
             navigate('/end', { state: { score } });
